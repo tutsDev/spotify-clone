@@ -1,6 +1,4 @@
 body {
-    display: flex;
-    justify-content: center;
     background-color: #000000;
     font-family: var(--font-dm-sans);
 }
@@ -17,9 +15,10 @@ body {
 .sidebar__navigation {
     background-color: #121212;
     border-radius: 8px;
+    /*padding: 16px 0 0 16px;*/
 }
 
-.sidebar__navigation .logo {
+.logo {
     background: #121212;
     display: flex;
     border-radius: 8px;
@@ -35,7 +34,7 @@ body {
     padding: 0 20px 10px 20px;
 }
 
-.sidebar nav ul li {
+.sidebar ul li {
     padding: 10px 0px;
 }
 
@@ -80,8 +79,9 @@ body {
 
 .library .library__button .fa {
     font-size: 20px;
-    margin-right: 10px;
     font-weight: 300;
+    color: #B3B3B3;
+    margin-right: 10px;
     padding-right: 8px;
 }
 
@@ -103,7 +103,7 @@ body {
     border-radius: 10px;
 }
 
- .section-playlist__content {
+.section-playlist .section-playlist__content {
     display: flex;
     flex-direction: column;
 }
@@ -164,4 +164,46 @@ body {
     width: 170px;
     margin: 8px;
     padding: 8px;
+}
+
+.disclaimer-premium {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    padding: 15px 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+}
+
+.disclaimer-premium .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text .disclaimer-premium__title {
+    color: #FFFFFF;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+
+.text .disclaimer-premium__subtitle {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.disclaimer-premium .disclaimer-premium__button {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    margin-right: 65px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
 }

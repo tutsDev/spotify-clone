@@ -1,8 +1,8 @@
 /*HEADER*/
 
-.mian-container {
+.main-container {
     max-width: 80vw;
-    height: 100vh;
+    height: 90vh;
     margin-left: 320px;
     margin-right: 56px;
 }
@@ -15,7 +15,6 @@
     margin: 10px;
     border-radius: 8px;
     background-color: #121212;
-    padding: 12px;
 }
 
 .header__navigation .navigation {
