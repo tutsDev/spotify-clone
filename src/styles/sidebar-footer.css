@@ -45,6 +45,11 @@ body {
     font-size: 14px;
 }
 
+.sidebar nav ul li a .fa {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
 .library {
     background-color: #121212;
     border-radius: 8px;
