@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../src/styles/vars.css">
     <link rel="stylesheet" href="../src/styles/sidebar-footer.css">
     <link rel="stylesheet" href="../src/styles/main-content.css">
+    <link rel="stylesheet" href="../src/styles/media-queryies.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
@@ -87,7 +88,7 @@
                     </button>
                     <div class="header__search">
                         <img src="../src/assets/icons/search.png" alt="">
-                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+                        <input id="search-input" type="text" maxlength="800" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="O que você quer ouvir?" value="">
                     </div>
                 </div>
 
@@ -108,7 +109,7 @@
 
                     <div class="offer__scroll-container">
                         <div class="offer__list">
-                            <section class="offer__list-item" style="grid-template-columns: repeat(4, minmax(200px, 1fr));">
+                            <section class="offer__list-item">
                                 <a href="" class="cards">
                                     <div class="cards card1">
                                         <img src="../src/assets/playlist/1.jpeg" alt="">
@@ -118,7 +119,7 @@
 
                                 <a href="" class="cards">
                                     <div class="cards card2">
-                                        <img src="../src/assets/playlist/2.jpeg" alt="">
+                                        <img src="../src/assets/playlist/2.png" alt="">
                                         <span>Feitos para você</span>
                                     </div> 
                                 </a>
@@ -217,9 +218,25 @@
                         </div>
                     </div>
                 </div>
+                <div id="result-artist" class="hidden">
+                    <div class="grid-container">
+                        <div class="artist-card" id="">
+                            <div class="card-img">
+                                <img id="artist-img" class="artist-img" />
+                                <div class="play">
+                                    <span class="fa fa-solid fa-play"></span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <a title="Foo Fighters" class="vst" href=""></a>
+                                <span class="artist-name" id="artist-name"></span>
+                                <span class="artist-categorie">Artista</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            
         </div>
     </main>
 
@@ -232,5 +249,7 @@
             <button class="disclaimer-premium__button">Inscreva-se grátis</button>
         </div>
     </footer>
+
+    <script type="text/javascript" src="../scripts/script.js"></script>
 </body>
 </html>
