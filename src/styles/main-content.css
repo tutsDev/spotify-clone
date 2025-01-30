@@ -90,3 +90,35 @@
     font-weight: 700;
     border-radius: 40px;
 }
+
+.playlist-container {
+    display: flex;
+    height: 60vh;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+#result-playlist {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlist {
+    margin: 24px;
+}
+
+.playlist h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+
+.playlist h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 46px;
+}
